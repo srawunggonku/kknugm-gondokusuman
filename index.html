@@ -9,18 +9,23 @@
 <body class="bg-gray-50 text-gray-800 font-sans">
 
    <!-- NAVIGATION BAR -->
-    <nav class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo Fit to Photo dan Teks -->
-            <a href="#" class="flex items-center gap-3 text-xl font-bold tracking-wider">
-                <!-- w-auto dan h-10 membuat logo proporsional sesuai rasio asli gambar -->
+   <nav class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+            <a href="#" class="flex items-center gap-3 text-xl font-bold tracking-wider z-50">
                 <img src="logo.png" alt="Logo KKN UGM" class="h-10 w-auto object-contain rounded shadow-sm">
                 <span>KKN UGM GONDOKUSUMAN</span>
             </a>
-            <div class="space-x-6">
-                <a href="#beranda" class="hover:text-amber-400 transition">Beranda</a>
-                <a href="#biografi" class="hover:text-amber-400 transition">Biografi</a>
-                <a href="#publikasi" class="hover:text-amber-400 transition">Publikasi</a>
+
+            <button id="menu-btn" class="z-50 block focus:outline-none p-2 rounded hover:bg-blue-800 transition" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <div id="menu-dropdown" class="hidden absolute top-full right-6 mt-2 w-48 bg-white text-gray-800 rounded-xl shadow-xl border border-gray-100 overflow-hidden py-2 z-40">
+                <a href="#beranda" class="mobile-menu-link block px-4 py-2.5 text-sm font-medium hover:bg-blue-50 hover:text-blue-900 transition">Beranda</a>
+                <a href="#biografi" class="mobile-menu-link block px-4 py-2.5 text-sm font-medium hover:bg-blue-50 hover:text-blue-900 transition">Biografi</a>
+                <a href="#publikasi" class="mobile-menu-link block px-4 py-2.5 text-sm font-medium hover:bg-blue-50 hover:text-blue-900 transition">Publikasi</a>
             </div>
         </div>
     </nav>
