@@ -26,7 +26,6 @@
     </nav>
 
     <!-- HERO / BERANDA SECTION -->
-    <!-- Tinggal ganti nama file di dalam url('...') sesuai nama gambar yang kamu upload -->
     <section id="beranda" class="bg-cover bg-center h-[60vh] flex items-center justify-center relative" style="background-image: url('BGNew.jpeg');">
         <div class="absolute inset-0 bg-blue-950/70"></div>
         <div class="relative text-center text-white px-4">
@@ -35,12 +34,14 @@
         </div>
     </section>
 
+    <!-- BIOGRAPHY / PROFIL TIM SECTION -->
     <section id="biografi" class="container mx-auto px-6 py-16">
         <h2 class="text-3xl font-bold text-center text-blue-900 mb-2">Profil & Struktur Inti Tim KKN</h2>
         <p class="text-center text-gray-500 mb-12">Mengenal Dosen Pembimbing Lapangan, pimpinan unit, dan anggota per Subunit</p>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto items-stretch mb-16">
             
+            <!-- 1. DOSEN PEMBIMBING LAPANGAN (DPL) -->
             <div class="bg-white rounded-xl shadow-md overflow-hidden text-center p-5 border border-gray-150 flex flex-col justify-between">
                 <div>
                     <img class="w-32 h-32 rounded-full mx-auto object-cover mb-4 border-4 border-amber-400" src="dpl.png" alt="Foto DPL">
@@ -51,6 +52,7 @@
                 <p class="text-gray-400 text-xs font-semibold mt-4 pt-4 border-t border-gray-100">Universitas Gadjah Mada</p>
             </div>
 
+            <!-- 2. KORMANIT (KETUA UNIT) -->
             <div class="bg-white rounded-xl shadow-md overflow-hidden text-center p-5 border border-gray-150 flex flex-col justify-between">
                 <div>
                     <img class="w-32 h-32 rounded-full mx-auto object-cover mb-4 border-4 border-amber-400" src="Kormanit.png" alt="Foto Kormanit">
@@ -61,6 +63,7 @@
                 <p class="text-gray-400 text-xs font-semibold mt-4 pt-4 border-t border-gray-100">Sekolah Vokasi</p>
             </div>
 
+            <!-- 3. BENDAHARA UNIT -->
             <div class="bg-white rounded-xl shadow-md overflow-hidden text-center p-5 border border-gray-150 flex flex-col justify-between">
                 <div>
                     <img class="w-32 h-32 rounded-full mx-auto object-cover mb-4 border-4 border-amber-400" src="Bendahara.png" alt="Foto Bendahara">
@@ -71,6 +74,7 @@
                 <p class="text-gray-400 text-xs font-semibold mt-4 pt-4 border-t border-gray-100">Sekolah Vokasi</p>
             </div>
 
+            <!-- 4. KOORDINATOR SHE -->
             <div class="bg-white rounded-xl shadow-md overflow-hidden text-center p-5 border border-gray-150 flex flex-col justify-between">
                 <div>
                     <img class="w-32 h-32 rounded-full mx-auto object-cover mb-4 border-4 border-amber-400" src="KoorSHE.png" alt="Foto Koordinator SHE">
@@ -86,127 +90,133 @@
 
         <h3 class="text-2xl font-bold text-center text-blue-900 mb-8">Daftar Subunit & Anggota Lapangan</h3>
         
-        <div class="space-y-16 max-w-7xl mx-auto">
+        <div class="space-y-12 max-w-7xl mx-auto">
             
+            <!-- SUBUNIT 1: TERBAN 1 -->
             <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
                 <div class="mb-6">
                     <h4 class="text-xl font-bold text-blue-900 flex items-center gap-2">📍 Subunit Terban 1</h4>
                     <p class="text-sm text-gray-600 mt-1"><strong>Lokasi:</strong> RW. 01, Kelurahan Terban, Kecamatan Gondokusuman, Kota Yogyakarta, DI Yogyakarta.</p>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center">
-                        <div class="text-xs font-bold text-gray-900 truncate">Dimas M. Gibran</p>
-                        <p class="text-[10px] text-amber-600 font-semibold">Kormasit</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 items-stretch">
+                    <!-- Kormasub Terban 1 (Kotak Tanpa Gambar, Desain Seragam) -->
+                    <div class="bg-amber-50/60 p-3 rounded-lg shadow-sm border border-amber-200 text-center flex flex-col justify-center min-h-[76px]">
+                        <p class="text-xs font-bold text-gray-900">Dimas M. Gibran</p>
+                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasub</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Fitri Dwi Noviana</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Anelia Hayu Salaisa</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Anisah Dwi K.</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">M. Alghifahri Aziz</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center bg-amber-50/50 border-amber-200">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border border-amber-200 bg-amber-50/50 text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-bold text-gray-900">Az Zahra Blazei D.</p>
-                        <p class="text-[9px] text-blue-900 font-semibold">Koor SHE</p>
+                        <p class="text-[9px] text-blue-900 font-semibold mt-0.5">Koor SHE</p>
                     </div>
                 </div>
             </div>
 
+            <!-- SUBUNIT 2: TERBAN 2 -->
             <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
                 <div class="mb-6">
                     <h4 class="text-xl font-bold text-blue-900 flex items-center gap-2">📍 Subunit Terban 2</h4>
                     <p class="text-sm text-gray-600 mt-1"><strong>Lokasi:</strong> RW. 08, Kelurahan Terban, Kecamatan Gondokusuman, Kota Yogyakarta, DI Yogyakarta.</p>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center">
-                        <div  class="text-xs font-bold text-gray-900 truncate">Fanny Darawangi</p>
-                        <p class="text-[10px] text-amber-600 font-semibold">Kormasit</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 items-stretch">
+                    <!-- Kormasub Terban 2 -->
+                    <div class="bg-amber-50/60 p-3 rounded-lg shadow-sm border border-amber-200 text-center flex flex-col justify-center min-h-[76px]">
+                        <p class="text-xs font-bold text-gray-900">Fanny Darawangi</p>
+                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasub</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Anggie Wiyani P.</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Axel Daffahimsa H.</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Angel Putri C.</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Alia Hafida R.</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">M. Irham Arief K.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- SUBUNIT 3: BACIRO 1 -->
             <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
                 <div class="mb-6">
                     <h4 class="text-xl font-bold text-blue-900 flex items-center gap-2">📍 Subunit Baciro 1</h4>
                     <p class="text-sm text-gray-600 mt-1"><strong>Lokasi:</strong> RW. 18, Kelurahan Baciro, Kecamatan Gondokusuman, Kota Yogyakarta, DI Yogyakarta.</p>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center">
-                        <div  class="text-xs font-bold text-gray-900 truncate">M. Farrel Ziafawwaz</p>
-                        <p class="text-[10px] text-amber-600 font-semibold">Kormasub</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 items-stretch">
+                    <!-- Kormasub Baciro 1 -->
+                    <div class="bg-amber-50/60 p-3 rounded-lg shadow-sm border border-amber-200 text-center flex flex-col justify-center min-h-[76px]">
+                        <p class="text-xs font-bold text-gray-900">M. Farrel Ziafawwaz</p>
+                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasub</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Karima Apriliani</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Nayla Nur Shadrina</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Nasywa Hanifah W.</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Ahmad Yasin Al M.</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Sherin Riscillya F.</p>
                     </div>
                 </div>
             </div>
             
+            <!-- SUBUNIT 4: BACIRO 2 -->
             <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
                 <div class="mb-6">
                     <h4 class="text-xl font-bold text-blue-900 flex items-center gap-2">📍 Subunit Baciro 2</h4>
                     <p class="text-sm text-gray-600 mt-1"><strong>Lokasi:</strong> RW. 07, Kelurahan Baciro, Kecamatan Gondokusuman, Kota Yogyakarta, DI Yogyakarta.</p>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4">
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center">
-                        <div class="text-xs font-bold text-gray-900 truncate">Ardian Atar</p>
-                        <p class="text-[10px] text-amber-600 font-semibold">Kormasit</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 items-stretch">
+                    <!-- Kormasub Baciro 2 -->
+                    <div class="bg-amber-50/60 p-3 rounded-lg shadow-sm border border-amber-200 text-center flex flex-col justify-center min-h-[76px]">
+                        <p class="text-xs font-bold text-gray-900">Ardian Atar</p>
+                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasub</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Della Dwi Hidayah</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Rahma Palupi S.</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Nasywa Durrotul</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center bg-amber-50/50 border-amber-200">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border border-amber-200 bg-amber-50/50 text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-bold text-gray-900">Jane Sharon L.</p>
-                        <p class="text-[9px] text-blue-900 font-semibold">Bendahara</p>
+                        <p class="text-[9px] text-blue-900 font-semibold mt-0.5">Bendahara</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-medium text-gray-900">Nilna Salsabila M.</p>
                     </div>
-                    <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center bg-amber-50/50 border-amber-200">
+                    <div class="bg-white p-3 rounded-lg shadow-sm border border-amber-200 bg-amber-50/50 text-center flex flex-col justify-center min-h-[76px]">
                         <p class="text-xs font-bold text-gray-900">Zaini Ihsan</p>
-                        <p class="text-[9px] text-blue-900 font-semibold">Kormanit</p>
+                        <p class="text-[9px] text-blue-900 font-semibold mt-0.5">Kormanit</p>
                     </div>
                 </div>
             </div>
-
-            
 
         </div>
     </section>
