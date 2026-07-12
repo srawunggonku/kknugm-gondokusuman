@@ -20,6 +20,14 @@
             opacity: 1;
             transform: scale(1);
         }
+        
+        /* Mengunci rasio & posisi awal background agar pergeseran JavaScript mulus */
+        .parallax-bg {
+            background-image: url('BGNew.jpeg');
+            background-size: cover;
+            background-position: center 0px;
+            will-change: background-position;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden">
@@ -45,7 +53,7 @@
         </div>
     </nav>
 
-    <section id="beranda" class="bg-cover bg-center bg-fixed h-[60vh] flex items-center justify-center relative overflow-hidden" style="background-image: url('BGNew.jpeg');">
+    <section id="beranda" class="parallax-bg h-[60vh] flex items-center justify-center relative overflow-hidden">
         <div class="absolute inset-0 bg-blue-950/70"></div>
         <div class="relative text-center text-white px-4 transform transition-all duration-1000 ease-out">
             <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight drop-shadow-lg">Mengabdi dengan Hati, Membangun Negeri</h1>
@@ -122,7 +130,7 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 items-stretch">
                     <div class="bg-amber-50/60 p-3 rounded-lg shadow-sm border border-amber-200 text-center flex flex-col justify-center min-h-[76px] hover:bg-amber-100 transition duration-200">
                         <p class="text-xs font-bold text-gray-900">Dimas M. Gibran</p>
-                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasub</p>
+                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasit</p>
                     </div>
                     <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px] hover:border-blue-300 hover:shadow transition duration-200 text-xs font-medium text-gray-900">Fitri Dwi Noviana</div>
                     <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px] hover:border-blue-300 hover:shadow transition duration-200 text-xs font-medium text-gray-900">Anelia Hayu Salaisa</div>
@@ -143,7 +151,7 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 items-stretch">
                     <div class="bg-amber-50/60 p-3 rounded-lg shadow-sm border border-amber-200 text-center flex flex-col justify-center min-h-[76px] hover:bg-amber-100 transition duration-200">
                         <p class="text-xs font-bold text-gray-900">Fanny Darawangi</p>
-                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasub</p>
+                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasit</p>
                     </div>
                     <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px] hover:border-blue-300 hover:shadow transition duration-200 text-xs font-medium text-gray-900">Anggie Wiyani P.</div>
                     <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px] hover:border-blue-300 hover:shadow transition duration-200 text-xs font-medium text-gray-900">Axel Daffahimsa H.</div>
@@ -161,7 +169,7 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 items-stretch">
                     <div class="bg-amber-50/60 p-3 rounded-lg shadow-sm border border-amber-200 text-center flex flex-col justify-center min-h-[76px] hover:bg-amber-100 transition duration-200">
                         <p class="text-xs font-bold text-gray-900">M. Farrel Ziafawwaz</p>
-                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasub</p>
+                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasit</p>
                     </div>
                     <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px] hover:border-blue-300 hover:shadow transition duration-200 text-xs font-medium text-gray-900">Karima Apriliani</div>
                     <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px] hover:border-blue-300 hover:shadow transition duration-200 text-xs font-medium text-gray-900">Nayla Nur Shadrina</div>
@@ -179,7 +187,7 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 items-stretch">
                     <div class="bg-amber-50/60 p-3 rounded-lg shadow-sm border border-amber-200 text-center flex flex-col justify-center min-h-[76px] hover:bg-amber-100 transition duration-200">
                         <p class="text-xs font-bold text-gray-900">Ardian Atar</p>
-                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasub</p>
+                        <p class="text-[10px] text-amber-600 font-bold mt-0.5">Kormasit</p>
                     </div>
                     <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px] hover:border-blue-300 hover:shadow transition duration-200 text-xs font-medium text-gray-900">Della Dwi Hidayah</div>
                     <div class="bg-white p-3 rounded-lg shadow-sm border text-center flex flex-col justify-center min-h-[76px] hover:border-blue-300 hover:shadow transition duration-200 text-xs font-medium text-gray-900">Rahma Palupi S.</div>
@@ -230,6 +238,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // 1. LOGIKA MENU 3 GARIS
             const menuBtn = document.getElementById('menu-btn');
             const menuDropdown = document.getElementById('menu-dropdown');
             const menuLinks = document.querySelectorAll('.mobile-menu-link');
@@ -252,6 +261,16 @@
                     }
                 });
             }
+
+            // 2. LOGIKA TRUE PARALLAX SCROLLING (BERGERAK PELAN)
+            const parallaxSection = document.getElementById('beranda');
+            
+            window.addEventListener('scroll', function() {
+                let offset = window.pageYOffset;
+                // Nilai 0.4 berarti background bergerak 40% dari kecepatan scroll teks asli. 
+                // Kurangi nilainya jika ingin gerakannya jauh lebih lambat (misal: 0.2).
+                parallaxSection.style.backgroundPosition = "center " + (offset * 0.4) + "px";
+            });
         });
     </script>
 
