@@ -6,7 +6,7 @@
     <title>Website Resmi KKN-PPM UGM Gondokusuman</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        #menu-dropdown a{
+        #menu-dropdown {
             transition: opacity 0.2s ease-out, transform 0.2s ease-out;
             transform-origin: top right;
         }
@@ -223,17 +223,12 @@
 
     <hr class="border-gray-200 container mx-auto px-6">
 
-    <!-- ========================================== -->
-    <!-- SECTION: DASHBOARD PUBLIKASI SUBUNIT       -->
-    <!-- ========================================== -->
     <section id="publikasi" class="container mx-auto px-6 py-16 bg-gray-50">
         <h2 class="text-3xl font-bold text-center text-blue-900 mb-2">Hasil Publikasi & Output KKN</h2>
         <p class="text-center text-gray-500 mb-12">Pilih subunit di bawah ini untuk melihat publikasi, modul, dan poster dokumentasi kerja</p>
 
-        <!-- Grid 4 Tombol Subunit -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             
-            <!-- Tombol Subunit Terban 1 -->
             <a href="terban1.html" class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center flex flex-col justify-between items-center group hover:-translate-y-1 hover:shadow-md hover:border-blue-300 transition-all duration-300">
                 <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300">
                     <span class="text-2xl font-bold">T1</span>
@@ -245,7 +240,6 @@
                 </span>
             </a>
 
-            <!-- Tombol Subunit Terban 2 -->
             <a href="terban2.html" class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center flex flex-col justify-between items-center group hover:-translate-y-1 hover:shadow-md hover:border-blue-300 transition-all duration-300">
                 <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300">
                     <span class="text-2xl font-bold">T2</span>
@@ -257,7 +251,6 @@
                 </span>
             </a>
 
-            <!-- Tombol Subunit Baciro 1 -->
             <a href="baciro1.html" class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center flex flex-col justify-between items-center group hover:-translate-y-1 hover:shadow-md hover:border-blue-300 transition-all duration-300">
                 <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300">
                     <span class="text-2xl font-bold">B1</span>
@@ -269,7 +262,6 @@
                 </span>
             </a>
 
-            <!-- Tombol Subunit Baciro 2 -->
             <a href="baciro2.html" class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center flex flex-col justify-between items-center group hover:-translate-y-1 hover:shadow-md hover:border-blue-300 transition-all duration-300">
                 <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300">
                     <span class="text-2xl font-bold">B2</span>
@@ -283,7 +275,6 @@
 
         </div>
     </section>
-   
 
     <footer class="bg-blue-950 text-gray-400 text-center py-6 text-sm">
         <p>&copy; 2026-YO030 Periode 2 KKN-PPM UGM Unit Kecamatan Gondokusuman.</p>
@@ -300,15 +291,7 @@
             }, 500);
         });
 
-        // LOGIKA ANTI-DOWNLOAD GOOGLE DOCS VIEWER
         document.addEventListener("DOMContentLoaded", function() {
-            const iframe = document.getElementById('pdf-tracker');
-            if (iframe) {
-                const rawUrl = iframe.getAttribute('data-src');
-                const cacheBuster = new Date().getTime();
-                iframe.src = `https://docs.google.com/gview?url=${rawUrl}?cb=${cacheBuster}&embedded=true`;
-            }
-
             // LOGIKA MENU 3 GARIS
             const menuBtn = document.getElementById('menu-btn');
             const menuDropdown = document.getElementById('menu-dropdown');
