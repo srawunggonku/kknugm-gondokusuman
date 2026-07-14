@@ -6,7 +6,7 @@
     <title>Website Resmi KKN-PPM UGM Gondokusuman</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        #menu-dropdown {
+        #menu-dropdown a{
             transition: opacity 0.2s ease-out, transform 0.2s ease-out;
             transform-origin: top right;
         }
@@ -223,34 +223,67 @@
 
     <hr class="border-gray-200 container mx-auto px-6">
 
+    <!-- ========================================== -->
+    <!-- SECTION: DASHBOARD PUBLIKASI SUBUNIT       -->
+    <!-- ========================================== -->
     <section id="publikasi" class="container mx-auto px-6 py-16 bg-gray-50">
         <h2 class="text-3xl font-bold text-center text-blue-900 mb-2">Hasil Publikasi & Output KKN</h2>
-        <p class="text-center text-gray-500 mb-12">Silakan baca dokumen secara langsung atau unduh melalui tombol yang tersedia</p>
+        <p class="text-center text-gray-500 mb-12">Pilih subunit di bawah ini untuk melihat publikasi, modul, dan poster dokumentasi kerja</p>
 
-        <div class="max-w-4xl mx-auto space-y-16">
+        <!-- Grid 4 Tombol Subunit -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            
+            <!-- Tombol Subunit Terban 1 -->
+            <a href="terban1.html" class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center flex flex-col justify-between items-center group hover:-translate-y-1 hover:shadow-md hover:border-blue-300 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300">
+                    <span class="text-2xl font-bold">T1</span>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900 mb-1">Subunit Terban 1</h4>
+                <p class="text-xs text-gray-500 mb-4">RW. 01, Kelurahan Terban</p>
+                <span class="text-sm font-semibold text-blue-900 group-hover:text-amber-500 inline-flex items-center gap-1 transition-colors duration-200">
+                    Lihat Dokumen &rarr;
+                </span>
+            </a>
 
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200">
-                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-4 mb-4 border-b border-gray-100 gap-4">
-                    <div>
-                        <h4 class="text-xl font-bold text-gray-900">Poster Kegiatan Trash Hunter oleh SubUnit Baciro 2</h4>
-                        <p class="text-sm text-gray-500">Format: PDF | Ukuran: 4.5 MB</p>
-                    </div>
-                    <a href="https://raw.githubusercontent.com/srawunggonku/kknugm-gondokusuman/main/png2pdf.pdf" download class="bg-blue-900 text-white px-5 py-2.5 rounded-lg shadow-md hover:bg-blue-800 active:scale-95 transition-all duration-150 text-sm font-medium w-full sm:w-auto text-center tracking-wide">
-                        Unduh File
-                    </a>
+            <!-- Tombol Subunit Terban 2 -->
+            <a href="terban2.html" class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center flex flex-col justify-between items-center group hover:-translate-y-1 hover:shadow-md hover:border-blue-300 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300">
+                    <span class="text-2xl font-bold">T2</span>
                 </div>
-        
-                <div class="w-full max-w-3xl mx-auto bg-gray-100 rounded-xl overflow-hidden shadow-inner border border-gray-200 aspect-[1/1.414] md:h-[950px] md:w-auto relative">
-                    <iframe 
-                        id="pdf-tracker"
-                        data-src="https://raw.githubusercontent.com/srawunggonku/kknugm-gondokusuman/main/png2pdf.pdf"
-                        class="w-full h-full border-none">
-                    </iframe>
+                <h4 class="text-lg font-bold text-gray-900 mb-1">Subunit Terban 2</h4>
+                <p class="text-xs text-gray-500 mb-4">RW. 08, Kelurahan Terban</p>
+                <span class="text-sm font-semibold text-blue-900 group-hover:text-amber-500 inline-flex items-center gap-1 transition-colors duration-200">
+                    Lihat Dokumen &rarr;
+                </span>
+            </a>
+
+            <!-- Tombol Subunit Baciro 1 -->
+            <a href="baciro1.html" class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center flex flex-col justify-between items-center group hover:-translate-y-1 hover:shadow-md hover:border-blue-300 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300">
+                    <span class="text-2xl font-bold">B1</span>
                 </div>
-            </div>
+                <h4 class="text-lg font-bold text-gray-900 mb-1">Subunit Baciro 1</h4>
+                <p class="text-xs text-gray-500 mb-4">RW. 18, Kelurahan Baciro</p>
+                <span class="text-sm font-semibold text-blue-900 group-hover:text-amber-500 inline-flex items-center gap-1 transition-colors duration-200">
+                    Lihat Dokumen &rarr;
+                </span>
+            </a>
+
+            <!-- Tombol Subunit Baciro 2 -->
+            <a href="baciro2.html" class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center flex flex-col justify-between items-center group hover:-translate-y-1 hover:shadow-md hover:border-blue-300 transition-all duration-300">
+                <div class="w-14 h-14 bg-blue-50 text-blue-900 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-900 group-hover:text-white transition-colors duration-300">
+                    <span class="text-2xl font-bold">B2</span>
+                </div>
+                <h4 class="text-lg font-bold text-gray-900 mb-1">Subunit Baciro 2</h4>
+                <p class="text-xs text-gray-500 mb-4">RW. 07, Kelurahan Baciro</p>
+                <span class="text-sm font-semibold text-blue-900 group-hover:text-amber-500 inline-flex items-center gap-1 transition-colors duration-200">
+                    Lihat Dokumen &rarr;
+                </span>
+            </a>
 
         </div>
     </section>
+   
 
     <footer class="bg-blue-950 text-gray-400 text-center py-6 text-sm">
         <p>&copy; 2026-YO030 Periode 2 KKN-PPM UGM Unit Kecamatan Gondokusuman.</p>
